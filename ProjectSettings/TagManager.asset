@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - GM
+  - Enemy
+  - Obstacle
+  - Floor
+  - Box
+  - Limit
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Ragdoll
   - 
   - 
   - 

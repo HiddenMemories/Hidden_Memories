@@ -38,7 +38,7 @@ public class ControlePersonagem : MonoBehaviour
 
     public GameObject objectInteract = null;
     public GameObject GrassSound;
-    public IA ia;
+    public IALook ia;
 
 
     //SOM
@@ -94,7 +94,7 @@ public class ControlePersonagem : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         float leftMove = Input.GetAxis("Horizontal");
         float rightMove = Input.GetAxis("Vertical");
@@ -347,8 +347,8 @@ public class ControlePersonagem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            ia.enabled = false;
-            ia.isAware = false;
+            //ia.enabled = false;
+            //ia.isAware = false;
             inv = false;
             //ia.renderer.material.color = Color.blue;
             transform.gameObject.tag = "Inv";
