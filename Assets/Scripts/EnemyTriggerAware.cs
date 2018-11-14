@@ -10,13 +10,21 @@ public class EnemyTriggerAware : MonoBehaviour
     public GameObject enemy;
     public GameObject portal;
     public bool portalAtivo = false;
+
+    
+    public GameObject triggerEscadasSuperiores;
+    public GameObject triggerMensagemExploracao;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            portalSound.SetActive(true);
-            portal.SetActive(true);
-            portalAtivo = true;
+            //portalSound.SetActive(true);
+            //portal.SetActive(true);
+            //portalAtivo = true;
+            
+            triggerEscadasSuperiores.SetActive(true);
+            triggerMensagemExploracao.SetActive(false);
         }
     }
     
@@ -35,13 +43,13 @@ public class EnemyTriggerAware : MonoBehaviour
     {
         if (portalAtivo == true)
         {
-            StartCoroutine(EnemyTime());
+            //StartCoroutine(EnemyTime());
            
         }
     }
     public void DesativarPortal()
     {
-        portal.SetActive(false);
+       // portal.SetActive(false);
     }
     
 }

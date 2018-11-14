@@ -14,6 +14,6 @@ public class Loading : MonoBehaviour
     private IEnumerator WaitForNewSceneLoad()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("GroundFloor");
     }
 }
