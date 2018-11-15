@@ -5125,6 +5125,162 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e7cc4c35e6bf6e64a9d18397f2cb5417, type: 3}
   m_PrefabInternal: {fileID: 1816465134}
+--- !u!1001 &1363620221
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.399
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.154
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232507627402198, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: ShapeModule.type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: -2.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.97849625
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5235849
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: LightsModule.light
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: LightsModule.ratio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: TrailModule.ratio
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: TrailModule.textureMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: NoiseModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198345594160485486, guid: c76c5bca64249364eb3709ca290f8e6d,
+        type: 2}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847744857433258, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+      propertyPath: m_Name
+      value: Particula de Poeira (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c76c5bca64249364eb3709ca290f8e6d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1364176586 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e7cc4c35e6bf6e64a9d18397f2cb5417, type: 3}
