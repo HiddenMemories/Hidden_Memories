@@ -25,6 +25,9 @@ public class MoveCharacterTuca : MonoBehaviour
     float speed;
     public float speedSmoothTime = 0.5f;
 
+    float moveHorizontal;
+    float moveVertical;
+
     public float walkSpeed;
     public float runSpeed;
 
@@ -78,15 +81,15 @@ public class MoveCharacterTuca : MonoBehaviour
             characterState1 = CharacterState1.walking;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && movement != Vector3.zero)
+        if (Input.GetKey(KeyCode.LeftShift) && movement != Vector3.zero && moveVertical > 0)
         {
             speed = runSpeed;
             characterState1 = CharacterState1.running;
         }
 
 
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
 
         print(moveVertical);
 
