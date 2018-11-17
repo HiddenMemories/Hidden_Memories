@@ -8,7 +8,7 @@ public class IA : MonoBehaviour
     public Animator anim;
     public GameObject cabeca;
     public GameObject cabecaAbaixada;
-    public ControlePersonagem player;
+    public MoveCharacterTuca player;
     public float fov;
     public float viewDistance = 10f;
     public bool isAware = false;
@@ -44,11 +44,11 @@ public class IA : MonoBehaviour
 
         }
        
-
+        
     }
     public void SearchForPlayer()
     {
-        if (player.characterState != CharacterState.crounching)
+        if (player.characterState1 != CharacterState1.crounching)
         {
             Debug.DrawLine(transform.position, cabeca.transform.position);
             if (Vector3.Angle(Vector3.forward, transform.InverseTransformPoint(cabeca.transform.position)) < fov / 2f)
@@ -71,7 +71,7 @@ public class IA : MonoBehaviour
                 }
             }
         }
-        if (player.characterState == CharacterState.crounching)
+        if (player.characterState1 == CharacterState1.crounching)
         {
             Debug.DrawLine(transform.position, cabecaAbaixada.transform.position);
             if (Vector3.Angle(Vector3.forward, transform.InverseTransformPoint(cabecaAbaixada.transform.position)) < fov / 2f)

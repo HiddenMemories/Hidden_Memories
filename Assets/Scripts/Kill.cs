@@ -5,8 +5,10 @@ using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 public class Kill : MonoBehaviour
 {
-    public ControleDoll CD;
-    public ControlePersonagem player;
+    //public Renderer Tuca;
+    //public ControleDoll CD;
+    public Animator animPlayer;
+    public MoveCharacterTuca player;
     public NavMeshAgent agent;
     public GameObject fadeMorte;
 
@@ -16,7 +18,10 @@ public class Kill : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             agent.speed = 0;
-            CD.Morte();
+            //CD.Morte();
+            
+            animPlayer.enabled = false;
+            player.enabled = false;
             fadeMorte.SetActive(true);
             StartCoroutine(LoadingScene());
         }

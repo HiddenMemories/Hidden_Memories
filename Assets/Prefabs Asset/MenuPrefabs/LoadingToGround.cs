@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Loading : MonoBehaviour
+public class LoadingToGround : MonoBehaviour
 {
 
     void Update()
@@ -14,6 +14,6 @@ public class Loading : MonoBehaviour
     private IEnumerator WaitForNewSceneLoad()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("OutDoor");
+        SceneManager.LoadScene("GroundFloor");
     }
 }

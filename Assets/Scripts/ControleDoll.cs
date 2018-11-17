@@ -5,12 +5,13 @@ using UnityEngine;
 public class ControleDoll : MonoBehaviour
 {
 
-    Rigidbody[] myRigidbodys;
+    public Rigidbody[] myRigidbodys;
 
-    public ControlePersonagem CP;
+    public MoveCharacterTuca MCT;
     public ControleDoll cD;
     public Animator playerAn;
-    public CharacterController CC;
+    //public Rigidbody rdb;
+    //public CharacterController CC;
 
     void Start()
     {
@@ -18,16 +19,22 @@ public class ControleDoll : MonoBehaviour
 
         foreach (Rigidbody rdb in myRigidbodys)
         {
-            rdb.isKinematic = true;
+            //rdb.isKinematic = true;
         }
     }
-
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            Morte();
+        }
+    }
     public void Morte()
     {
         foreach (Rigidbody rdb in myRigidbodys)
         {
-            CP.enabled = false;
-            CC.enabled = false;
+            MCT.enabled = false;
+            //CC.enabled = false;
             playerAn.enabled = false;
             rdb.isKinematic = false;
         }

@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 114250509591030082}
   m_Layer: 0
   m_Name: Tuca_base
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2940,8 +2940,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1277296724647954}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.726429, y: 1.0262688, z: -4.552776}
+  m_LocalRotation: {x: -0, y: 0.72985953, z: -0, w: 0.68359727}
+  m_LocalPosition: {x: -56.16, y: 2, z: -10.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4724505416318136}
@@ -2949,7 +2949,7 @@ Transform:
   - {fileID: 4964424631707396}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 144.494, z: 0}
 --- !u!4 &4849861054187298
 Transform:
   m_ObjectHideFlags: 1
@@ -3200,10 +3200,10 @@ Animator:
   m_GameObject: {fileID: 1277296724647954}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 12f20328d1180ac4498b687d8a1647a8, type: 3}
-  m_Controller: {fileID: 9100000, guid: ec694a8d14b9fb847bcfd6ad22fd9597, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0ab81d5453093484abd7e71ee23cccde, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -3220,8 +3220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaece50cccc7a7f40a26645210638598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  characterState1: 0
   cam: {fileID: 0}
+  speedSmoothTime: 0.5
+  walkSpeed: 2
+  runSpeed: 4
 --- !u!136 &136887233059717410
 CapsuleCollider:
   m_ObjectHideFlags: 1
