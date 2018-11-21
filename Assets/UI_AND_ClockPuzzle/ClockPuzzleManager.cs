@@ -37,12 +37,13 @@ public class ClockPuzzleManager : MonoBehaviour
     public bool puzzleActive = false;
     public GameObject trigger;
     public GameObject UI_TIPS;
-
+    public GameObject UI_Pause;
     public AudioSource TickTack;
-    
+    public PauseScript PS;
 
     public float delay=1f;
 
+    public Animator animClock;
     // TUCA
     public Animator anim;
     public MoveCharacterTuca player;
@@ -61,7 +62,7 @@ public class ClockPuzzleManager : MonoBehaviour
         posicaoMinutos1 = true;
         ponteiroHoras.transform.rotation = rotacaoDozeHoras.transform.rotation;
         ponteiroMinutos.transform.rotation = rotacaoZeroMinutos.transform.rotation;
-
+        animClock.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -88,6 +89,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         rightArrowPressed = true;
                         Invoke("DelayRightArrow", delay);
                         TickTack.Play();
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H",true);
+                        animClock.SetBool("3H_6H", false);
+                        animClock.SetBool("6H_9H", false);
+                        animClock.SetBool("9H_12H", false);
+                        animClock.SetBool("12H_9H", false);
+                        animClock.SetBool("9H_6H", false);
+                        animClock.SetBool("6H_3H", false);
+                        animClock.SetBool("3H_12H", false);
 
 
                     }
@@ -100,6 +110,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         leftArrowPressed = true;
                         Invoke("DelayLeftArrow", delay);
                         TickTack.Play();
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H", false);
+                        animClock.SetBool("3H_6H", false);
+                        animClock.SetBool("6H_9H", false);
+                        animClock.SetBool("9H_12H", false);
+                        animClock.SetBool("12H_9H", true);
+                        animClock.SetBool("9H_6H", false);
+                        animClock.SetBool("6H_3H", false);
+                        animClock.SetBool("3H_12H", false);
 
                     }
 
@@ -117,6 +136,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         rightArrowPressed = true;
                         Invoke("DelayRightArrow", delay);
                         TickTack.Play();
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H", false);
+                        animClock.SetBool("3H_6H", true);
+                        animClock.SetBool("6H_9H", false);
+                        animClock.SetBool("9H_12H", false);
+                        animClock.SetBool("12H_9H", false);
+                        animClock.SetBool("9H_6H", false);
+                        animClock.SetBool("6H_3H", false);
+                        animClock.SetBool("3H_12H", false);
 
 
                     }
@@ -129,7 +157,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         leftArrowPressed = true;
                         Invoke("DelayLeftArrow", delay);
                         TickTack.Play();
-
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H", false);
+                        animClock.SetBool("3H_6H", false);
+                        animClock.SetBool("6H_9H", false);
+                        animClock.SetBool("9H_12H", false);
+                        animClock.SetBool("12H_9H", false);
+                        animClock.SetBool("9H_6H", false);
+                        animClock.SetBool("6H_3H", false);
+                        animClock.SetBool("3H_12H", true);
                     }
 
                 }
@@ -145,7 +181,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         rightArrowPressed = true;
                         Invoke("DelayRightArrow", delay);
                         TickTack.Play();
-
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H", false);
+                        animClock.SetBool("3H_6H", false);
+                        animClock.SetBool("6H_9H", true);
+                        animClock.SetBool("9H_12H", false);
+                        animClock.SetBool("12H_9H", false);
+                        animClock.SetBool("9H_6H", false);
+                        animClock.SetBool("6H_3H", false);
+                        animClock.SetBool("3H_12H", false);
 
                     }
                     if (Input.GetKey(KeyCode.LeftArrow) && posicaoHoras3 == true && leftArrowPressed == false)
@@ -157,6 +201,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         Invoke("DelayLeftArrow", delay);
                         TickTack.Play();
 
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H", false);
+                        animClock.SetBool("3H_6H", false);
+                        animClock.SetBool("6H_9H", false);
+                        animClock.SetBool("9H_12H", false);
+                        animClock.SetBool("12H_9H", false);
+                        animClock.SetBool("9H_6H", false);
+                        animClock.SetBool("6H_3H", true);
+                        animClock.SetBool("3H_12H", false);
                     }
 
                 }
@@ -171,7 +224,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         rightArrowPressed = true;
                         Invoke("DelayRightArrow", delay);
                         TickTack.Play();
-
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H", false);
+                        animClock.SetBool("3H_6H", false);
+                        animClock.SetBool("6H_9H", false);
+                        animClock.SetBool("9H_12H", true);
+                        animClock.SetBool("12H_9H", false);
+                        animClock.SetBool("9H_6H", false);
+                        animClock.SetBool("6H_3H", false);
+                        animClock.SetBool("3H_12H", false);
 
                     }
 
@@ -183,7 +244,15 @@ public class ClockPuzzleManager : MonoBehaviour
                         leftArrowPressed = true;
                         Invoke("DelayLeftArrow", delay);
                         TickTack.Play();
-
+                        animClock.SetBool("12H", false);
+                        animClock.SetBool("12H_3H", false);
+                        animClock.SetBool("3H_6H", false);
+                        animClock.SetBool("6H_9H", false);
+                        animClock.SetBool("9H_12H", false);
+                        animClock.SetBool("12H_9H", false);
+                        animClock.SetBool("9H_6H", true);
+                        animClock.SetBool("6H_3H", false);
+                        animClock.SetBool("3H_12H", false);
                     }
 
                 }
@@ -342,19 +411,25 @@ public class ClockPuzzleManager : MonoBehaviour
             anim.enabled = true;
             player.enabled = true;
             puzzleActive = false;
-            CVC1.m_Priority = 20;
+            CVC1.m_Priority = 10;
+            CVC2.m_Priority = 0;
+
+
         }
     }
     public void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.tag=="Player" && Input.GetKeyDown(KeyCode.E))
+        PS.enabled = false;
+        if (other.gameObject.tag=="Player" && Input.GetKeyDown(KeyCode.E))
         {
             UI_TIPS.SetActive(true);
             anim.enabled = false;
             player.enabled = false;
             puzzleActive = true;
-            CVC2.m_Priority = 10;
+            CVC2.m_Priority = 20;
             CVC1.m_Priority = 0;
+            //UI_Pause.SetActive(false);
+            
 
         }
         if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Escape))
@@ -365,6 +440,13 @@ public class ClockPuzzleManager : MonoBehaviour
             puzzleActive = false;
             CVC1.m_Priority = 10;
             CVC2.m_Priority = 0;
+            //UI_Pause.SetActive(true);
+            
+        }
+        else
+        {
+            PS.enabled = true;
         }
     }
+    
 }
