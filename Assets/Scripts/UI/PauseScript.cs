@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PauseScript : MonoBehaviour
 {
+    public Button firstSelect;
    
     public  bool GameIsPaused = false;
    
@@ -25,7 +28,9 @@ public class PauseScript : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                Resume();
+               // Resume();
+                firstSelect.Select();
+                
             }
             else
             {

@@ -72,9 +72,10 @@ GameObject:
   - component: {fileID: 33581459136491746}
   - component: {fileID: 23023550970058096}
   - component: {fileID: 65236178739573064}
-  - component: {fileID: 111989864544944586}
   - component: {fileID: 65055126478211232}
-  - component: {fileID: 114992473033600330}
+  - component: {fileID: 111670473688812736}
+  - component: {fileID: 65172566617870174}
+  - component: {fileID: 114926674295694006}
   m_Layer: 0
   m_Name: Door 1
   m_TagString: Untagged
@@ -204,7 +205,7 @@ Transform:
   - {fileID: 4156875758933868}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
 --- !u!4 &4706148980489232
 Transform:
   m_ObjectHideFlags: 1
@@ -509,6 +510,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0292178, y: 2.4015117, z: 0.20174956}
   m_Center: {x: 0.51461273, y: -0.08121097, z: -0.0030305572}
+--- !u!65 &65172566617870174
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1620171974600552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0292178, y: 2.4015117, z: 0.6}
+  m_Center: {x: 0.51461273, y: -0.08121097, z: 0.36}
 --- !u!65 &65236178739573064
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -521,7 +534,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0292178, y: 2.4015117, z: 0.6}
   m_Center: {x: 0.51461273, y: -0.08121097, z: 0.36}
---- !u!111 &111989864544944586
+--- !u!111 &111670473688812736
 Animation:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -536,7 +549,7 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114992473033600330
+--- !u!114 &114926674295694006
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -548,5 +561,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somPorta: {fileID: 0}
-  animPorta: {fileID: 111989864544944586}
+  animPorta: {fileID: 111670473688812736}
   portaAberta: 0

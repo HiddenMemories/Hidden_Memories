@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public enum CharacterState1
 {
     idle,
@@ -33,8 +34,13 @@ public class MoveCharacterTuca : MonoBehaviour
 
     Vector3 movement;
 
+    public bool flashLight = false;
+    public GameObject light;
+
     void Awake()
     {
+
+        light.SetActive(false);
         _rigidbody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
 
@@ -99,6 +105,20 @@ public class MoveCharacterTuca : MonoBehaviour
         transform.Translate(movement * Time.deltaTime * speed);
 
         Animation(speed);
+
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+           if(flashLight==false)
+            {
+                flashLight = true;
+                light.SetActive(true);
+            }
+            else
+            {
+                flashLight = false;
+                light.SetActive(false);
+            }
+        }
     }
 
     void Animation(float velocidade)
@@ -106,4 +126,5 @@ public class MoveCharacterTuca : MonoBehaviour
         anim.SetFloat("SpeedPercent", speed, speedSmoothTime, Time.deltaTime);
 
     }
+   
 }
