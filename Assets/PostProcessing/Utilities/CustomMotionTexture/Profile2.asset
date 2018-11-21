@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 0.45
+      intensity: 0
       radius: 2.29
       sampleCount: 10
       downsampling: 1
@@ -56,7 +56,7 @@ MonoBehaviour:
         blendType: 0
         reflectionQuality: 2
         maxDistance: 107
-        iterationCount: 234
+        iterationCount: 317
         stepSize: 3
         widthModifier: 0.5
         reflectionBlur: 1
@@ -100,8 +100,8 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.22
-        threshold: 14.49
+        intensity: 6.99
+        threshold: 10.75
         softKnee: 0.5
         radius: 4
         antiFlicker: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       tonemapping:
-        tonemapper: 1
+        tonemapper: 2
         neutralBlackIn: 0.02
         neutralWhiteIn: 10
         neutralBlackOut: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0
+        postExposure: 0.75
         temperature: 0
         tint: 0
         hueShift: 0
