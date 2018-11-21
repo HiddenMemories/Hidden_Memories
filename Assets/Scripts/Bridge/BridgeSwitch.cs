@@ -5,10 +5,10 @@ using UnityEngine;
 public class BridgeSwitch : MonoBehaviour
 {
 
-    public Animator bridgeAnimator;
+    //public Animator bridgeAnimator;
     public GameObject bridgeCollider;
 
-   // public Animation bridgeAnimation;
+    public Animation bridgeAnimation;
     public bool isActive = false;
     public Light redLight;
     public Light greenLight;
@@ -31,10 +31,10 @@ public class BridgeSwitch : MonoBehaviour
                 greenLight.enabled = true;
                 BridgeActive();
 
-                bridgeAnimator.SetBool("OpenBridge", true);
+                //bridgeAnimator.SetBool("OpenBridge", true);
                 bridgeCollider.SetActive(false);
 
-               // StartCoroutine(delayAnimation());
+                StartCoroutine(delayAnimation());
             }
         }
         else
@@ -51,7 +51,7 @@ public class BridgeSwitch : MonoBehaviour
     private IEnumerator delayAnimation()
     {
         yield return new WaitForSeconds(1);
-        //bridgeAnimation.Play();
+        bridgeAnimation.Play();
     }
     public void BridgeActive()
     {
