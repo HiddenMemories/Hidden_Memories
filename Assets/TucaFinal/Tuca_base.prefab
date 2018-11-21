@@ -3222,7 +3222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterState1: 0
   cam: {fileID: 0}
-  speedSmoothTime: 0.5
+  speedSmoothTime: 0
   walkSpeed: 2
   runSpeed: 4
 --- !u!136 &136887233059717410

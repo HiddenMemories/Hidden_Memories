@@ -1372,6 +1372,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114250509591030082, guid: 53e2ffc75a33f8449a1b258b35b789c9,
+        type: 2}
+      propertyPath: speedSmoothTime
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53e2ffc75a33f8449a1b258b35b789c9, type: 2}
   m_IsPrefabParent: 0
