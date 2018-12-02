@@ -13,7 +13,7 @@ public class LoadingToGround : MonoBehaviour
 
     private IEnumerator WaitForNewSceneLoad()
     {
-        yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("GroundFloor");
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("NewGroundFloor");
     }
 }

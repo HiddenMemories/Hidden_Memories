@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class TriggerPorta : MonoBehaviour
 {
+    public Animator anim;
+    public MoveCharacterTuca MCT;
     public GameObject FadeOut;
     public bool fadeAtivo = false;
     public GameObject SomPorta;
@@ -14,6 +16,8 @@ public class TriggerPorta : MonoBehaviour
         MensagemInteragir.SetActive(true);
         if (other.gameObject.tag=="Player" && Input.GetKeyDown(KeyCode.E))
         {
+            MCT.enabled = false;
+            anim.enabled = false;
             FadeOut.SetActive(true);
             SomPorta.SetActive(true);
            
@@ -30,6 +34,6 @@ public class TriggerPorta : MonoBehaviour
     public IEnumerator DelayChangeLevel()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("LoadingGroundFloor");
+        SceneManager.LoadScene("LoadingNewGroundFloor");
     }
 }

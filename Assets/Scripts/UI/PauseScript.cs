@@ -10,13 +10,9 @@ public class PauseScript : MonoBehaviour
    
     public GameObject pauseMenuUI;
     public GameObject soundMenuUI;
-    
-
 
     private void Start()
     {
-        
-        
         GameIsPaused = false;
     }
     void Update()

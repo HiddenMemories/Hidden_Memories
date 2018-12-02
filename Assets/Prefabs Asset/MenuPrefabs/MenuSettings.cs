@@ -6,57 +6,52 @@ using UnityEngine.UI;
 
 public class MenuSettings : MonoBehaviour {
 
+    public AudioSource click;
     public AudioMixer audioMixer;
-    public Dropdown resolutionDropDown;
-    Resolution[] resolutions;
+    public int width;
+    public int height;
+    public bool isFullscreen=false;
 
-    void Start()
-    {
-        resolutions = Screen.resolutions;
-        resolutionDropDown.ClearOptions();
+    
+   
 
-        List<string> options = new List<string>();
-        int currentResolutuinIndex = 0;
-        for (int i = 0; i < resolutions.Length; i++)
-        {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
-
-            if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
-            {
-                currentResolutuinIndex = i;
-            }
-        }
-
-        resolutionDropDown.AddOptions(options);
-        resolutionDropDown.value = currentResolutuinIndex;
-        resolutionDropDown.RefreshShownValue();
-
-
-    }
     #region Menu and Pause
     
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("Volume", volume);
+        //controlador de volume ( para o slider)
     }
 
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        click.Play();
+        // Seleção de qualidade pelo index gerado no editor;
     }
 
-    public void SetFullscreen(bool isFullscreen)
+    public void SetFullscreen()
     {
-        Screen.fullScreen = isFullscreen;
-    }
+        Screen.SetResolution(width, height, true);
+        click.Play();
 
-    public void SetResolution(int resolutionIndex)
+    }
+    public void SetWidth(int newWidth)
     {
-        Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        width = newWidth; // largura da tela
+        click.Play();
+    }
+    public void SetHeight(int newHeight)
+    {
+        height = newHeight; // altura da tela;
+        click.Play();
+    }
+    public void SetResolution()
+    {
+        Screen.SetResolution(width, height,false); // Fullscreen on ou off
     }
     #endregion
 
+   
+    
 }

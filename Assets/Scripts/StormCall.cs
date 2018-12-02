@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class StormCall : MonoBehaviour
 {
-    public GameObject Thunder;
-    public GameObject ChuvaSound;
+    public AudioSource Thunder;
+    public AudioSource ChuvaSound;
     public GameObject ChuvaParticle;
     public bool triggerAtivo = false;
+    public Animation chuvaAnim;
+    public GameObject Triggerchuva;
 
     void Update()
     {
@@ -16,18 +18,20 @@ public class StormCall : MonoBehaviour
             AtivarThunder();
             Invoke("AtivarSomChuva", 7);
             Invoke("AtivarParticulas", 9);
+            triggerAtivo = false;
+            Triggerchuva.SetActive(false);
 
         }   
     }
    
     public void AtivarThunder()
     {
-        Thunder.SetActive(true);
+        Thunder.Play();
     }
     public void AtivarSomChuva()
     {
-        
-        ChuvaSound.SetActive(true);
+        chuvaAnim.Play();
+        ChuvaSound.Play();
     }
     private void OnTriggerEnter(Collider other)
     {

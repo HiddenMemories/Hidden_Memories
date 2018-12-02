@@ -17,7 +17,7 @@ public class LoadingToMenu : MonoBehaviour {
 
     private IEnumerator WaitForNewSceneLoad()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene("Attic");
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControleDoll : MonoBehaviour
 {
@@ -10,8 +11,7 @@ public class ControleDoll : MonoBehaviour
     public MoveCharacterTuca MCT;
     public ControleDoll cD;
     public Animator playerAn;
-    //public Rigidbody rdb;
-    //public CharacterController CC;
+    public GameObject canvasMorte;
 
     void Start()
     {
@@ -19,25 +19,29 @@ public class ControleDoll : MonoBehaviour
 
         foreach (Rigidbody rdb in myRigidbodys)
         {
-            //rdb.isKinematic = true;
+            rdb.isKinematic = true;
         }
     }
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Y))
-        {
-            Morte();
-        }
+        
+           
+        
     }
     public void Morte()
     {
         foreach (Rigidbody rdb in myRigidbodys)
         {
             MCT.enabled = false;
-            //CC.enabled = false;
+            canvasMorte.SetActive(true);
             playerAn.enabled = false;
             rdb.isKinematic = false;
+            Invoke("RestartScene", 8);
         }
+    }
+    public void RestartScene()
+    {
+        SceneManager.LoadScene("Basement");
     }
 
 }

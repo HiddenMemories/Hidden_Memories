@@ -15,17 +15,18 @@ public class MenuSounds : MonoBehaviour
     public Animation fadesoundThunder;
 
     public void Awake()
-    {
+    {//Som inicial
         IntroSoundRain.Play("RainSoundFadeIn");
         
         
     }
     public void clickPlay()
     {
+        //som ao clicar
         click.Play();
     }
     public void thunderPlay()
-    {
+    {//Som ao clickar no play
         thunderClick.Play();
         fadesoundThunder.Play("ThunderSoundFadeOut");
        

@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     //public Animator animator;
     public GameObject FadeOut;
-
+   
     
 
 
@@ -143,7 +143,12 @@ public class MainMenu : MonoBehaviour
 
     }
 
-
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("Credits");
+        
+       
+    }
    
 
   

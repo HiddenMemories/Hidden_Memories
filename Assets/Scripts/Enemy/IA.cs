@@ -9,10 +9,11 @@ public class IA : MonoBehaviour
     public GameObject cabeca;
     public GameObject cabecaAbaixada;
     public MoveCharacterTuca player;
+    public ControleDoll CD;
     public float fov;
     public float viewDistance = 10f;
     public bool isAware = false;
-    
+    public AudioSource stepEnemySound;
     public NavMeshAgent agent;
     //public Renderer renderer;
     private EnemyPatrol ep;
@@ -103,6 +104,19 @@ public class IA : MonoBehaviour
         anim.SetBool("IsRunning", true);
         isAware = true;
     }
-   
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.tag=="Player")
+        {
+            anim.SetBool("IsWalking", false);
+            anim.SetBool("IsRunning", false);
+            isAware = false;
+            agent.speed = 0;
+            CD.Morte();
+            stepEnemySound.Stop();
+            CD.enabled = true;
+
+        }
+    }
 
 }

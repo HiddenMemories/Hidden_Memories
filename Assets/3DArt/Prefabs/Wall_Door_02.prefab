@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4309693005846452}
   - component: {fileID: 33795129133308612}
   - component: {fileID: 23596817153835310}
-  - component: {fileID: 64568561414069400}
+  - component: {fileID: 65746264043007796}
   m_Layer: 0
   m_Name: Door 1
   m_TagString: Untagged
@@ -159,15 +159,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1217283550300904}
-  m_LocalRotation: {x: -0, y: -0.000002294779, z: -0, w: -1}
-  m_LocalPosition: {x: -1.309, y: -1.5579, z: -3.2974}
+  m_LocalRotation: {x: -0, y: -0.7071074, z: -0, w: -0.7071062}
+  m_LocalPosition: {x: 27.71468, y: -7.712473, z: -0.7523948}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4316458986999760}
   - {fileID: 4885354705676462}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
 --- !u!4 &4556644325036234
 Transform:
   m_ObjectHideFlags: 1
@@ -379,20 +379,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 280fc20e77d9c5f48b01338ac65da2d4, type: 3}
---- !u!64 &64568561414069400
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1150505504948386}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 18a73c2e38dc09e4283ff9c526a95954, type: 3}
 --- !u!64 &64595055767291802
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -431,3 +417,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0362544, y: 5.1994276, z: 0.20849171}
   m_Center: {x: 1.0809375, y: 2.0997138, z: 0.124687135}
+--- !u!65 &65746264043007796
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150505504948386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0292178, y: 2.4015117, z: 0.20174956}
+  m_Center: {x: 0.5146087, y: -0.08121097, z: -0.0030286498}

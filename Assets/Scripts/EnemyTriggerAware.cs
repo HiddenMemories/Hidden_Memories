@@ -19,12 +19,12 @@ public class EnemyTriggerAware : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            portalSound.SetActive(true);
-            portal.SetActive(true);
-            portalAtivo = true;
+            //portalSound.SetActive(true);
+            //portal.SetActive(true);
+            //portalAtivo = true;
             
-            //triggerEscadasSuperiores.SetActive(true);
-            //triggerMensagemExploracao.SetActive(false);
+            triggerEscadasSuperiores.SetActive(true);
+            triggerMensagemExploracao.SetActive(false);
         }
     }
     

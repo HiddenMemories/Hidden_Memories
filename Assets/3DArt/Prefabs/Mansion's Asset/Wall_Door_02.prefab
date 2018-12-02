@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 64534522773375152}
   - component: {fileID: 111959247170732164}
   - component: {fileID: 65345981624573542}
-  - component: {fileID: 114345815885883570}
+  - component: {fileID: 114546017814503654}
   m_Layer: 0
   m_Name: Door 1
   m_TagString: Untagged
@@ -175,15 +175,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1344344698915210}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.360672, y: -2.4192128, z: 11.078155}
+  m_LocalRotation: {x: -0, y: -0.70710844, z: -0, w: -0.70710516}
+  m_LocalPosition: {x: 44.40667, y: -2.4192128, z: 8.076155}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4668564420563292}
   - {fileID: 4687983407829682}
+  - {fileID: 4123344697099204}
   - {fileID: 4853183153663094}
   - {fileID: 4591863383715908}
-  - {fileID: 4123344697099204}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -198,7 +198,7 @@ Transform:
   m_LocalScale: {x: -1.15121, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4024723990994490}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -180, y: -180, z: -0.000015258789}
 --- !u!4 &4227408692040774
 Transform:
@@ -237,7 +237,7 @@ Transform:
   m_LocalScale: {x: -1.1512144, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4024723990994490}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4668564420563292
 Transform:
@@ -292,7 +292,7 @@ Transform:
   - {fileID: 4227408692040774}
   - {fileID: 4804967501618576}
   m_Father: {fileID: 4024723990994490}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23044861363812264
 MeshRenderer:
@@ -695,7 +695,7 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114345815885883570
+--- !u!114 &114546017814503654
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -703,10 +703,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935130776134780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39051b6f506c8454692d2a5d2fbc3e27, type: 3}
+  m_Script: {fileID: 11500000, guid: ba29f4878f9eb6f469ec79c21f06d395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   somPorta: {fileID: 0}
-  mensagemPorta: {fileID: 0}
-  item: {fileID: 0}
   animPorta: {fileID: 111959247170732164}
+  portaAberta: 0
